@@ -6,7 +6,7 @@ In addition you may want to add the SYS_NICE capability, in order for ntpd to be
 
 Example:
 ```
-docker run --cap-add=SYS_TIME --cap-add=SYS_NICE ivankrizsan/mule:latest
+docker run --cap-add=SYS_TIME --cap-add=SYS_NICE sanctumware/mule:latest
 ```
 
 ## Volumes
@@ -23,7 +23,7 @@ This IP address is used to expose JMX of the Mule ESB instance running in the Do
 
 Example:
 ```
-docker run -e "SET_CONTAINER_TIMEZONE=true" -e "CONTAINER_TIMEZONE=Europe/Stockholm" -e "CONTAINER_EXTERNAL_IP=192.168.99.100" ivankrizsan/mule:latest
+docker run -e "SET_CONTAINER_TIMEZONE=true" -e "CONTAINER_TIMEZONE=Asia/Manila" -e "CONTAINER_EXTERNAL_IP=192.168.99.100" sanctumware/mule:latest
 ```
 
 ## Exposed ports
