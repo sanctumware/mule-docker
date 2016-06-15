@@ -3,7 +3,7 @@
 #
 FROM anapsix/alpine-java:jdk8
 
-MAINTAINER Ivan Krizsan, https://github.com/krizsan
+MAINTAINER Michael Angelo B. Sevilla, https://sanctumware.net
 
 # Mule ESB CE version number.
 ENV MULE_VERSION=3.7.0
@@ -16,7 +16,7 @@ ENV MULE_HOME=/opt/mule-standalone \
 # Set this environment variable to true to set timezone on container start.
     SET_CONTAINER_TIMEZONE=true \
 # Default container timezone.
-    CONTAINER_TIMEZONE=Europe/Stockholm
+    CONTAINER_TIMEZONE=Asia/Manila
 
 # Install NTPD for time synchronization.
 RUN apk --no-cache update && \
